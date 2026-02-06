@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard • NOVA XMD</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="logo">
+        <div class="dot"></div>
+        <a href="/" style="font-weight:900">NOVA XMD</a>
+        <span class="muted">Dashboard</span>
+      </div>
+      <div class="navlinks">
+        <a class="chip" href="/">Accueil</a>
+        <a class="chip" href="/pair">Pairing</a>
+        <a class="chip chip2" href="https://whatsapp.com/channel/0029VbBrAUYAojYjf3Ndw70d" target="_blank" rel="noopener">Chaîne</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="row space">
+        <div>
+          <h2>📊 Sessions actives</h2>
+          <p class="muted">Nombre total: <b id="sessionsCount">0</b></p>
+        </div>
+        <button id="btnRefresh" class="btn" type="button">🔄 Rafraîchir</button>
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Numéro</th>
+            <th>Depuis</th>
+          </tr>
+        </thead>
+        <tbody id="sessionsBody">
+          <tr><td colspan="3">Chargement...</td></tr>
+        </tbody>
+      </table>
+
+      <div class="mini">
+        <div class="badge" id="healthBadge">Checking...</div>
+        <div class="muted">API: <code>/api/status</code></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🔧 Conseils Render</h3>
+      <ul class="list">
+        <li>Start command: <code>node server.js</code></li>
+        <li>Ajoute <code>PORT</code> automatiquement (Render le fait).</li>
+        <li>Ne mets pas PM2 sur Render free (pas nécessaire).</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <span>© DEV NOVA</span>
+      <span class="muted">•</span>
+      <span class="muted">Bot + Pair Site</span>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

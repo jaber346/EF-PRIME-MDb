@@ -1,1 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pairing • NOVA XMD</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="logo">
+        <div class="dot"></div>
+        <a href="/" style="font-weight:900">NOVA XMD</a>
+        <span class="muted">Pairing</span>
+      </div>
+      <div class="navlinks">
+        <a class="chip" href="/">Accueil</a>
+        <a class="chip" href="/dashboard">Dashboard</a>
+        <a class="chip chip2" href="https://whatsapp.com/channel/0029VbBrAUYAojYjf3Ndw70d" target="_blank" rel="noopener">Chaîne</a>
+      </div>
+    </div>
 
+    <div class="card">
+      <h2>📲 Générer un code</h2>
+      <p class="muted">Entre ton numéro WhatsApp puis clique sur <b>Générer le code</b>.</p>
+
+      <div class="form">
+        <label>Numéro WhatsApp</label>
+        <input id="phone" class="input" placeholder="+226xxxxxxxx" autocomplete="tel" />
+        <div class="row">
+          <button id="btnPair" class="btn" type="button">⚡ Générer le code</button>
+          <a class="btn btn2" href="https://whatsapp.com/channel/0029VbBrAUYAojYjf3Ndw70d" target="_blank" rel="noopener">🔥 Rejoindre la chaîne</a>
+        </div>
+
+        <label style="margin-top:14px;">Code d’appairage</label>
+        <div class="row">
+          <input id="codeOut" class="input" placeholder="Ton code apparaîtra ici..." readonly />
+          <button id="btnCopy" class="btn btn3" type="button">📋 Copier</button>
+        </div>
+
+        <div class="mini">
+          <div class="badge" id="healthBadge">Checking...</div>
+          <div class="muted">Si le serveur est OK, tu peux générer le code.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🧠 Comment utiliser ?</h3>
+      <ol class="list">
+        <li>Clique <b>Générer le code</b>.</li>
+        <li>Sur WhatsApp, va dans <b>Appareils connectés</b> → <b>Connecter un appareil</b>.</li>
+        <li>Entre le code (ou scan selon ta version) puis attends la connexion.</li>
+      </ol>
+      <p class="muted">Si tu veux, je peux aussi t’ajouter une page “FAQ” + “Support”.</p>
+    </div>
+
+    <div class="footer">
+      <span>© DEV NOVA</span>
+      <span class="muted">•</span>
+      <span class="muted">/api/pair?number=+226xxxxxxxx</span>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

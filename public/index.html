@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NOVA XMD • Pair Site</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="logo">
+        <div class="dot"></div>
+        <span>NOVA XMD • Pair Site</span>
+      </div>
+      <div class="navlinks">
+        <a class="chip" href="/pair">Pairing</a>
+        <a class="chip" href="/dashboard">Dashboard</a>
+        <a class="chip chip2" href="https://whatsapp.com/channel/0029VbBrAUYAojYjf3Ndw70d" target="_blank" rel="noopener">Chaîne</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <h1>Génère ton code d’appairage WhatsApp</h1>
+      <p>Entre ton numéro, clique <b>Générer</b>, puis connecte le compte WhatsApp avec le code.</p>
+
+      <div class="row">
+        <a class="btn" href="/pair">🚀 Ouvrir Pairing</a>
+        <a class="btn btn2" href="/dashboard">📊 Voir Dashboard</a>
+      </div>
+
+      <div class="card grid2">
+        <div>
+          <div class="k">Statut serveur</div>
+          <div class="v" id="healthBadge">Checking...</div>
+          <div class="hint">API: <code>/api/health</code></div>
+        </div>
+        <div>
+          <div class="k">Conseils</div>
+          <ul class="list">
+            <li>Utilise ton numéro complet (ex: <code>+226xxxxxxxx</code>)</li>
+            <li>Si tu as déjà scanné, il peut afficher “déjà enregistré”.</li>
+            <li>Garde ton dossier <code>/session</code> (important).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer">
+        <span>© DEV NOVA</span>
+        <span class="muted">•</span>
+        <span class="muted">Render Ready</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
