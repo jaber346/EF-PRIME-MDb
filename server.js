@@ -15,8 +15,8 @@ import makeWASocket, {
 const app = express();
 
 // Render fournit PORT
-const PORT = Number(process.env.PORT || 2038);
-
+const PORT = process.env.PORT || 2038;
+app.listen(PORT, () => console.log("✅ Server on", PORT));
 // ================== CONFIG ==================
 const config = {
   MAX_RETRIES: 5,
