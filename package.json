@@ -1,15 +1,16 @@
 {
-  "name": "nova-xmd-pair-site",
+  "name": "nova-xmd-v1",
   "version": "1.0.0",
-  "description": "NOVA XMD Pairing site + multi-session bot (Render-ready)",
+  "description": "Multi-user WhatsApp bot",
   "type": "module",
   "main": "server.js",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "start": "node server.js"
-  },
-  "engines": {
-    "node": ">=18"
-  },
+  }
+}
   "dependencies": {
     "@whiskeysockets/baileys": "^7.0.0-rc.9",
     "express": "^4.19.2",
